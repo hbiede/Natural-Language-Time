@@ -10,7 +10,6 @@ import Foundation
 
 public class Natural_Language_Time {
 
-
     /// Creates a new NatTime object to be used to convert a time to a natural langauge output.
     ///
     /// Takes an input of the form 'hh-mm' to create a natural language version of the time, ie an input of "16-30"
