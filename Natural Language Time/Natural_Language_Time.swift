@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Natural_Language_Time {
+public class Natural_Language_Time {
 
 
     /// Creates a new NatTime object to be used to convert a time to a natural langauge output.
@@ -19,7 +19,7 @@ class Natural_Language_Time {
         private let hourConversion = [0: "Midnight", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten", 11: "Eleven", 12: "Noon", 13: "One", 14: "Two", 15: "Three", 16: "Four", 17: "Five", 18: "Six", 19: "Seven", 20: "Eight", 21: "Nine", 22: "Ten", 23: "Eleven"]
         private var hours:Int?, minutes:Int?
         var natLangString:String = "Default Time"
-        var timeString: String {
+        public var timeString: String {
             get {
                 return (hours == nil || minutes == nil) ? "Default Time" : "\(String(describing: hours!))-\(String(describing: minutes!))"
             }
