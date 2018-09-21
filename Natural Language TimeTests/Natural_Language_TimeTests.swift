@@ -11,7 +11,7 @@ import XCTest
 class Natural_Language_TimeTests: XCTestCase {
 
     func testTimeString() {
-        var timeTest = Natural_Language_Time.NatTime()
+        var timeTest = NaturalLanguageTime.NatTime()
         
         timeTest.timeString = "3-23"
         XCTAssertEqual(timeTest.timeString, "3-23")
@@ -37,18 +37,18 @@ class Natural_Language_TimeTests: XCTestCase {
     }
 
     func testNatLang() {
-        var timeTest = Natural_Language_Time.NatTime()
+        var timeTest = NaturalLanguageTime.NatTime()
 
         timeTest.timeString = "3-23"
-        XCTAssertEqual(timeTest.natLangString, "25 Past Three")
+        XCTAssertEqual(timeTest.getNatLangString(), "25 Past Three")
 
         timeTest.timeString = "3-30"
-        XCTAssertEqual(timeTest.natLangString, "Half Past Three")
+        XCTAssertEqual(timeTest.getNatLangString(), "Half Past Three")
 
         timeTest.timeString = "3-45"
-        XCTAssertEqual(timeTest.natLangString, "Quarter Til Four")
+        XCTAssertEqual(timeTest.getNatLangString(), "Quarter Til Four")
 
         timeTest.timeString = "3-00"
-        XCTAssertEqual(timeTest.natLangString, "Three O'clock")
+        XCTAssertEqual(timeTest.getNatLangString(), "Three O'clock")
     }
 }

@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C389D79D210FCB9600528400 /* Natural_Language_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C389D793210FCB9600528400 /* Natural_Language_Time.framework */; };
 		C389D7A2210FCB9600528400 /* Natural_Language_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D7A1210FCB9600528400 /* Natural_Language_TimeTests.swift */; };
-		C389D7AE210FCBB200528400 /* Natural_Language_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D7AD210FCBB200528400 /* Natural_Language_Time.swift */; };
-		C389D7B2210FCC5100528400 /* Natural_Language_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D7AD210FCBB200528400 /* Natural_Language_Time.swift */; };
+		C389D7AE210FCBB200528400 /* NaturalLanguageTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D7AD210FCBB200528400 /* NaturalLanguageTime.swift */; };
+		C389D7B2210FCC5100528400 /* NaturalLanguageTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D7AD210FCBB200528400 /* NaturalLanguageTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,7 @@
 		C389D79C210FCB9600528400 /* Natural Language TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Natural Language TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C389D7A1210FCB9600528400 /* Natural_Language_TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Natural_Language_TimeTests.swift; sourceTree = "<group>"; };
 		C389D7A3210FCB9600528400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C389D7AD210FCBB200528400 /* Natural_Language_Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Natural_Language_Time.swift; sourceTree = "<group>"; };
+		C389D7AD210FCBB200528400 /* NaturalLanguageTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		C389D795210FCB9600528400 /* Natural Language Time */ = {
 			isa = PBXGroup;
 			children = (
-				C389D7AD210FCBB200528400 /* Natural_Language_Time.swift */,
+				C389D7AD210FCBB200528400 /* NaturalLanguageTime.swift */,
 				C389D797210FCB9600528400 /* Info.plist */,
 			);
 			path = "Natural Language Time";
@@ -195,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C389D7AE210FCBB200528400 /* Natural_Language_Time.swift in Sources */,
+				C389D7AE210FCBB200528400 /* NaturalLanguageTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C389D7B2210FCC5100528400 /* Natural_Language_Time.swift in Sources */,
+				C389D7B2210FCC5100528400 /* NaturalLanguageTime.swift in Sources */,
 				C389D7A2210FCB9600528400 /* Natural_Language_TimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +345,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -354,6 +356,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Natural Language Time/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +375,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +386,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Natural Language Time/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
