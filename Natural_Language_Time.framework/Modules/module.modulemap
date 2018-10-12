@@ -1,4 +1,0 @@
-framework module Natural_Language_Time {
-  header "Natural_Language_Time-Swift.h"
-  requires objc
-}
