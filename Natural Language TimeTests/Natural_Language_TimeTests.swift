@@ -39,16 +39,37 @@ class Natural_Language_TimeTests: XCTestCase {
     func testNatLang() {
         var timeTest = NaturalLanguageTime.NatTime()
 
-        timeTest.timeString = "3-23"
-        XCTAssertEqual(timeTest.getNatLangString(), "25 Past Three")
+        natTime.timeString = "00:00"
+        XCTAssert(natTime.getNatLangString() == "Midnight")
 
-        timeTest.timeString = "3-30"
-        XCTAssertEqual(timeTest.getNatLangString(), "Half Past Three")
+        natTime.timeString = "00:05"
+        XCTAssert(natTime.getNatLangString() == "Five Past Midnight")
 
-        timeTest.timeString = "3-45"
-        XCTAssertEqual(timeTest.getNatLangString(), "Quarter Til Four")
+        natTime.timeString = "00:10"
+        XCTAssert(natTime.getNatLangString() == "Ten Past Midnight")
 
-        timeTest.timeString = "3-00"
-        XCTAssertEqual(timeTest.getNatLangString(), "Three O'clock")
+        natTime.timeString = "00:15"
+        XCTAssert(natTime.getNatLangString() == "Quarter Past Midnight")
+
+        natTime.timeString = "00:20"
+        XCTAssert(natTime.getNatLangString() == "Twelve Twenty")
+
+        natTime.timeString = "00:25"
+        XCTAssert(natTime.getNatLangString() == "Twelve Twenty Five")
+
+        natTime.timeString = "00:30"
+        XCTAssert(natTime.getNatLangString() == "Half Past Midnight")
+
+        natTime.timeString = "00:35"
+        XCTAssert(natTime.getNatLangString() == "Twelve Thirty Five")
+
+        natTime.timeString = "00:45"
+        XCTAssert(natTime.getNatLangString() == "Quarter Til One")
+
+        natTime.timeString = "00:50"
+        XCTAssert(natTime.getNatLangString() == "Ten Til One")
+
+        natTime.timeString = "00:55"
+        XCTAssert(natTime.getNatLangString() == "Five Til One")
     }
 }
